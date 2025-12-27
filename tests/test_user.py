@@ -1,5 +1,4 @@
 from fastapi.testclient import TestClient
-
 from src.main import app
 
 client = TestClient(app)
@@ -17,7 +16,6 @@ users = [
         'email': 'p.p.petrov@mail.com',
     }
 ]
-
 def test_get_existed_user():
     '''Получение существующего пользователя'''
     response = client.get("/api/v1/user", params={'email': users[0]['email']})
