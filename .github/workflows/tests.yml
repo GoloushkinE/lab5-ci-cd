@@ -2,7 +2,7 @@ name: Test Python App
 
 on:
   push:
-    branches: [ dev ]  # ← добавил явно ветку, иначе будет триггер на все
+     branches: [dev, main]  # ← добавил явно ветку, иначе будет триггер на все
 
 jobs:
   ci:
